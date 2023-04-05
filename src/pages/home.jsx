@@ -16,6 +16,7 @@ export default () => {
 		try {
 			const res = await axios.get(`http://localhost:8000/get-user/${username}`);
 			setUser(res.data.user);
+			localStorage.setItem("user", JSON.stringify(res.data.user));
 			if (res.data.user.accountType == 1) {
 				navigate("job-poster");
 			} else {

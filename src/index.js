@@ -4,6 +4,7 @@ import "./index.css";
 import ServiceWorker from "./pages/service-worker";
 import JobPoster from "./pages/job-poster";
 import Home from "./pages/home";
+import JobForm from "./pages/job-form";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
 	{
 		path: "/job-poster",
 		element: <JobPoster />,
+	},
+	{
+		path: "job-form",
+		element: <JobForm />,
 	},
 ]);
 

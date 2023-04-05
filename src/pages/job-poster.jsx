@@ -1,8 +1,11 @@
 import React from "react";
 import Pfp from "../media/pfp.png";
 import TwoToneCard from "../components/twotone-card";
+import { useNavigate } from "react-router-dom";
 
 export default () => {
+	const navigate = useNavigate();
+
 	return (
 		<div className="bg-slate-black w-full h-screen p-5">
 			<div className="w-full flex m-3">
@@ -18,6 +21,9 @@ export default () => {
 					height="h-[122px]"
 					width="w-[354px]"
 					poster="Dino Studio"
+					onClick={() => {
+						navigate("/job-form");
+					}}
 				/>
 			</div>
 		</div>

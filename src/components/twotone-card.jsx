@@ -4,6 +4,7 @@ import StudioIcon from "../media/studio-icon.png";
 export default (props) => {
 	return (
 		<div
+			onClick={props.onClick}
 			className={`${props.height ? props.height : "h-[200px]"} ${
 				props.width ? props.width : "w-[250px]"
 			} bg-black rounded-2xl shadow-lg  mx-2 min-w-[224px]`}
