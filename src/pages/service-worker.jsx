@@ -4,16 +4,20 @@ import TwoToneCard from "../components/twotone-card";
 import RainbowCard from "../components/rainbow-card";
 import { useAtom } from "jotai";
 import { jobsAtom } from "../store/jobs.atom";
+import { userAtom } from "../store/user.atom";
 import { assignedJobsAtom } from "../store/assigned_jobs.atom";
 import axios from "axios";
 
 export default () => {
 	// global state for all jobs fetched from db
 	const [jobs, setJobs] = useAtom(jobsAtom);
+	const [user, setUser] = useAtom(userAtom);
 
 	useEffect(() => {
 		getJobs();
 	}, []);
+
+	console.log(user);
 
 	const getJobs = async () => {
 		const res = await axios.get("http://localhost:8000/get-jobs");
