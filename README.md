@@ -18,3 +18,7 @@
 # Information
 
 Project has unfinished features due to time limitations, would like to explain over call/interview where I had the most time-consuming blockers. Thankyou :)
+
+# Since there wasn't a link for the google docs answers in the form, it is pasted here:
+
+https://docs.google.com/document/d/1RI0BjIO4TO8d83HguoJJE09DvRCPNZCrTnDN08hdk3o/edit?usp=sharing
